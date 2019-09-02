@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        a.test:link {
+            color: green;
+            text-decoration: none;
+        }
+
+        a.test:visited {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a.test:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a.test:active {
+            color: gray;
+            text-decoration: none;
+        }
+    </style>
+
+    <meta name="keywords" content="HTML CSS JavaScript">
+    <meta name="author" content="Suzuki">
+    <meta name="description" content="HTML Studying">
+    <meta http-equiv="refresh" content="30">
+</head>
+
+<body>
+    <!--标题&水平线-->
+    <h1>这是对HTML的复习</h1>
+    <hr />
+
+    <br />
+
+
+    <!--段落-->
+    <h3>这是段落的练习</h3>
+    <p>这是一个段落</p>
+    <p>浏览器会在其后换行</p>
+
+    <!--文本格式化-->
+    <h3>这是文本格式化的练习</h3>
+    <p><b>加粗</b></p>
+    <p><em>强调</em></p>
+    <p><i>斜体</i></p>
+    <p>
+        <pre>格式化文本   </pre>
+    </p>
+    <p><small>小号字体</small></p>
+    <p><strong>重要文本</strong></p>
+    <p><abbr title="这是一个缩写">缩写</abbr></p>
+    <address>
+        姓名：SUZUKI<br />
+        邮箱：578229323@qq.com<br />
+    </address>
+    <p><del>删除文本</del></p>
+    <p><ins>插入文本</ins></p>
+    <p><sub>下标</sub></p>
+    <p><sup>上标</sup></p>
+
+    <br />
+
+    <!--链接&图片-->
+    <h3>这是链接和图片的练习</h3>
+    <a href="http://www.bilibili.com" target="_blank" rel="noopener noreferrer">
+        <img id="sis" src="俺妹.jpg" alt="高坂桐乃" width="384px" height="240px">
+    </a>
+
+    <br />
+
+    <h3>这是跳转的练习</h3>
+    <a href="#sis" target="_self" rel="noopener noreferrer">跳转到可以打开哔哩哔哩的那张图片</a>
+
+    <br />
+
+    <h3>这是图像映射的练习</h3>
+    <img src="俺妹.jpg" alt="高坂桐乃" width="960px" height="600px" usemap="#mysister">
+    <map name="mysister">
+        <area shape="circle" coords="240,150,100"
+            href="https://www.baidu.com/baidu?wd=%E9%AB%98%E5%9D%82%E6%A1%90%E4%B9%83&tn=monline_4_dg&ie=utf-8"
+            target="_blank" alt="百度高坂桐乃" rel="noopener noreferrer">
+    </map>
+
+    <br /><br />
+
+
+    <!--CSS-->
+    <h3>这是CSS的练习</h3>
+    <a class="test" href="http://www.bilibili.com" target="_blank">bilibili</a>
+    <p style="color: aquamarine">这是一个用内联css渲染的段落</p>
+
+    <br /><br />
+
+    <!--表格-->
+    <table border="1">
+        <tr>
+            <td>row1,cell1</td>
+            <td>row1,cell2</td>
+        </tr>
+        <tr>
+            <td>row2,cell1</td>
+            <td>row2,cell2</td>
+        </tr>
+    </table>
+
+    <br /><br />
+
+    <!--列表-->
+    <h3>这是列表的练习</h3>
+    <h4>无序列表</h4>
+    <ul style="list-style-type: circle">
+        <li>tea</li>
+        <li>coffee</li>
+    </ul>
+
+    <h4>有序列表</h4>
+    <ol type="A">
+        <li>tea
+            <ol type="I">
+                <li>Chine</li>
+                <li>Western</li>
+            </ol>
+        </li>
+        <li>coffee</li>
+    </ol>
+
+    <h4>自定义列表</h4>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Mike</dt>
+        <dd>- white cold drink</dd>
+    </dl>
+
+    <br /><br />
+
+    <!--区块&布局-->
+    <div class="distribution">
+        <div style="height: 50;width: 500px;background-color: coral">
+            <p style="margin-bottom: 0;text-align: center">这是布局的练习</p>
+        </div>
+
+        <div style="height: 200px;width: 150px;background-color: gold;float: left;">
+            <ul>
+                <li>Coffee</li>
+                <li>Tea</li>
+            </ul>
+        </div>
+
+        <div style="height: 200px;width: 350px;background-color: goldenrod;float: left;">
+            <p>这是内容</p>
+        </div>
+
+        <div style="height: 20px;width: 500px;background-color: hotpink;clear: both">
+            <p style="text-align: center"><b>版权：Suzuki</b></p>
+        </div>
+
+    </div>
+
+    <br /><br />
+
+
+    <!--表单-->
+    <h3>这是表单的练习</h3>
+    <h4>文本域+密码+提交按钮+重置按钮</h4>
+    <form action="">
+        Username：<input type="text" name="username" value="username" size="20"><br />
+        Password:<input type="password" name="password" size="20">
+        <input type="submit" value="提交">
+        <input type="reset" name="reset" value="重置">
+    </form>
+
+    <br />
+
+    <h4>这是单选按钮的练习</h4>
+    <form action="">
+        <input type="radio" name="sex" value="male">Male<br />
+        <input type="radio" name="sex" value="woman">Woman
+    </form>
+
+    <br />
+
+    <h4>这是复选框的练习</h4>
+    <form action="">
+        <input type="checkbox" name="vehicle" value="car">Car<br />
+        <input type="checkbox" name="vehicle" value="bike">Bike
+    </form>
+
+    <br />
+
+    <h4>这是下拉列表的练习</h4>
+    <form action="">
+        <select name="sex">
+            <option value="male" selected>Man</option>
+            <option value="woman">Woman</option>
+        </select>
+    </form>
+
+    <br /><br />
+
+    <h4>这是文本域的练习</h4>
+    <textarea name="textarea" cols="30" rows="10" style="color: gray">
+        输入文本…
+    </textarea>
+
+    <br /><br />
+
+    <!--框架-->
+    <h3>这是框架的练习</h3>
+    <h4>普通框架</h4>
+    <iframe src="http://www.runoob.com" frameborder="0" height="30%" width="30%"></iframe>
+
+    <br />
+
+    <h4>点击后在指定框架内显示页面</h4>
+    <iframe name="frame_a" src="http://www.runoob.com" frameborder="0" height="40%" width="40%"></iframe>
+    <br />
+    <a href="http://www.baidu.com" target="frame_a">点击</a>
+
+</body>
+
+<h3>这是JavaScript脚本的练习</h3>
+<p id="java">我的第一个JavaScript脚本</p>
+<script>
+    function myfunction() {
+        document.getElementById("java").innerHTML = "Hello,JavaScript!"
+    }
+
+    function myfunction2() {
+        document.getElementById("java").innerHTML = "Hi,JavaScript!"
+    }
+</script>
+
+<button type="button" onclick="myfunction()">点击</button><br />
+<input type="button" value="点击" onclick="myfunction2()">
+
+</html>

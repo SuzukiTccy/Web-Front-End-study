@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!--标题-->
+    <title>这是本网页的标题</title>
+
+    <!--base元素-->
+    <!--这段代码有问题，图片不能显示，还未解决-->
+    <!-- <base href="C:\Users\SUZUKI TAIKI\Desktop\HTML 学习\" target="_blank"> -->
+
+    <!--link-->
+
+    <!--style-->
+    <!--这里之改变了class为"test"的标签的样式-->
+    <style type="text/css">
+        a.test:link {
+            color: green;
+            text-decoration: none;
+        }
+
+        a.test:visited {
+            color: blue;
+            text-decoration: none;
+        }
+
+        a.test:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a.test:active {
+            color: gray;
+            text-decoration: none;
+        }
+    </style>
+
+    <!--meta-->
+    <meta name="author" content="Suzuki" />
+    <meta name="keywords" content="HTML" />
+    <meta name="description" content="HTML" />
+    <meta http-equiv="refresh" content="30" />
+
+    <!---->
+
+</head>
+
+<body>
+    <h1>HTML学习</h1>
+    <hr />
+    <p>HTML学习：段落</p>
+    <p>另一个段落</p>
+    <p>一个段落<br />用了换行标签的段落</p>
+
+    <!--这是注释-->
+
+    <p>
+        这里源代码中有，
+        好几个个空行，
+        而且每段话前都有三个空格，
+        但是浏览器中没有显示换行，
+        空格也只显示了1个。
+    </p>
+
+    <!--文本格式化-->
+    <b>加粗字体</b> <br />
+    <strong>加重语气</strong> <br />
+    <i>斜体</i> <br />
+    <em>强调</em> <br />
+    <sup>上标</sup> <br />
+    <sub>下标</sub> <br />
+    <del>删除字</del> <br />
+    <small>小号字</small> <br />
+    <ins>插入字</ins> <br />
+    <br />
+    <address>
+        地址<br />
+        人名：suzuki <br />
+        邮箱：578229323@qq.com <br />
+    </address> <br />
+    <pre>
+        预格式文本
+    </pre> <br />
+    <abbr title="鼠标停留此处展开缩写">鼠标停留此处</abbr> <br />
+
+    <br />
+
+    <!--以下是HTML链接的联系代码-->
+    <!--超链接是一张图片-->
+    <a href="https://baike.baidu.com/item/%E9%AB%98%E5%9D%82%E6%A1%90%E4%B9%83/8753316?fr=aladdin" target="_blank"
+        rel="noopener noreferrer">
+        <img src="俺妹.jpg" width="192px" height="120px" alt="高坂桐乃" />
+    </a> <br />
+
+    <!--超链接是文本-->
+    <a href="http://www.baidu.com" target="_blank" rel="noopener noreferrer">超链接学习</a> <br />
+
+    <br />
+
+    <!--以下是链接id属性的练习-->
+    <a href="#mysister" target="_Self" rel="noopener noreferrer">页面内跳转指定位置</a> <br />
+
+    <img id="mysister" src="俺妹.jpg" width="960px" height="600px" alt="高坂桐乃" usemap="#sis" />
+
+    <br />
+    <br />
+
+
+    <!--CSS内联样式-->
+    <!--没有下划线，以及绿色-->
+    <a class="test" href="http://www.baidu.com" target="_blank">内联样式表学习</a>
+
+
+    <!--图像-->
+    <!--图像映射-->
+    <map name="sis">
+        <area shape="circle" coords="100,100,100" alt="sis" target="_blank"
+            href="https://baike.baidu.com/item/%E9%AB%98%E5%9D%82%E6%A1%90%E4%B9%83/8753316?fr=aladdin" />
+    </map>
+
+
+    <!--表格-->
+    <br />
+    <br />
+    <table border="1" cellspacing="0" cellpadding="1">
+        <th>table</th>
+        <th>head</th>
+        <tr>
+            <td>row 1 cell 1</td>
+            <td>row 1 cell 2</td>
+        </tr>
+        <tr>
+            <td>row 2 cell 1</td>
+            <td>row 2 cell 2</td>
+        </tr>
+
+    </table>
+
+    <br />
+
+    <!--列表-->
+    <!--有序列表-->
+    <p>这是一个有序列表</p>
+    <ol type="A">
+        <li>Coffee</li>
+        <li>tea
+            <ol type="1">
+                <li>China</li>
+                <li>Western</li>
+            </ol>
+        </li>
+    </ol>
+
+    <br />
+
+    <!--无序列表-->
+    <p>这是一个无序列表</p>
+    <ul style="list-style-type: circle">
+        <li>Coffee</li>
+        <li>tea
+            <ul style="list-style-type: square">
+                <li>Chine</li>
+                <li>Western</li>
+            </ul>
+        </li>
+    </ul>
+
+    <br />
+    <br />
+
+
+    <!--布局-->
+    <div id="buju" style="width: 500px">
+        <div style="background-color: burlywood;width: 500px;">
+            <h1 style="margin-bottom:0">这是一个标题</h1>
+        </div>
+
+        <div style="background-color: coral;width: 200px;height: 300px;float:left;">
+            <ul>
+                <li>tea
+                    <ol>
+                        <li>China</li>
+                        <li>Western</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+        <div style="background-color: darksalmon;width:300px;height: 300px;float: left">
+            <p>这是内容</p>
+        </div>
+
+        <div style="background-color: pink;width: 500px;height: 50px;clear: both">
+            <p style="text-align:center"><b>版权：Suzuki</b></p>
+        </div>
+    </div>
+
+    <br />
+
+    <!--表单-->
+    <!--文本域+密码+提交按钮-->
+    <form action="">
+        Username:<input type="text" name="username" size="20" /><br />
+        Password:<input type="password" name="password" size="20" />
+        <input type="submit" value="Submit">
+    </form>
+
+    <br />
+
+    <!--单选按钮-->
+    <form action="">
+        <input type="radio" name="vehicle" value="bike">bike<br />
+        <input type="radio" name="vehicle" value="car">car
+    </form>
+
+    <br />
+
+    <!--复选框-->
+    <form action="">
+        <input type="checkbox" name="tea" value="tea">Tea<br />
+        <input type="checkbox" name="coffee" value="coffee">Coffee<br />
+    </form>
+
+    <br />
+
+    <!--带预选项的下拉列表-->
+    <form action="">
+        <select name="sex">
+            <option value="male" selected>Male</option>
+            <option value="Woman">Woman</option>
+        </select>
+    </form>
+
+    <br /><br />
+
+    <!--按钮-->
+    <form action="">
+        <input type="button" value="I love u">
+    </form>
+
+    <br /><br />
+
+    <!--文本框-->
+    <textarea name="lalala" cols="30" rows="10">
+        这是一个文本框
+    </textarea>
+
+    <br /><br />
+
+    <!--带边框的表单-->
+    <form action="">
+        <fieldset>
+            <legend>personal inform</legend>
+            Username:<input type="text" name="username2" /><br />
+            Password:<input type="password" name="password" />
+        </fieldset>
+    </form>
+
+    <br /><br />
+
+
+    <!--框架-->
+    <iframe name="frame_a" src="http://www.runoob.com" frameborder="0" height="20%" width="20%"></iframe>
+    <br />
+    <a href="http://www.baidu.com" target="frame_a">www.baidu.com</a>
+
+    <br /><br />
+
+
+    <!--颜色-->
+
+
+    <!--脚本-->
+    <p id="demo">我的第一个JavaScript脚本</p>
+    <script>
+        function Myfunction() {
+            document.getElementById("demo").innerHTML = "Hello,JavaScript"
+        }
+
+        function Myfunction2() {
+            document.getElementById("demo").innerHTML = "我的第一个JavaScript脚本"
+        }
+    </script>
+    <button type="button" onclick="Myfunction()">点我</button><br />
+    <input type="button" value="点我" onclick="Myfunction2()">
+
+    <br /><br />
+
+
+    <!--字符实体-->
+    <p>以下是字符实体的练习</p>
+    <p>打出一个小于号&lt</p>
+    <p>打出一个大于号&gt</p>
+    <p>打出一个双引号&quot</p>
+    <p>打出一个单引号&#39</p>
+    <p>人民币符号&yen</p>
+
+    <br /><br />
+
+
+    <!---->
+
+
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+
+
+
+
+
+
+</body>
+
+</html>

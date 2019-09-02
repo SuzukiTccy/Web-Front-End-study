@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Suzuki">
+    <meta name="keywords" content="HTML5">
+    <title>HTML5</title>
+
+</head>
+
+<body>
+
+    <h1>开始HTML5的学习吧</h1>
+    <hr /><br />
+
+
+    <!--使用JavaScript绘制图像，Canvas标签的学习-->
+    <!--绘制红色矩形-->
+    <canvas id="mycanvas" width="200px" height="200px" style="border: 1px solid #c3c3c3">
+        您的浏览器不支持 HTML5 canvas标签
+    </canvas>
+
+
+    <br />
+
+    <!--添加渐变-->
+    <canvas id="canvas" width="200px" height="200px" style="border: 1px solid #c3c3c3"></canvas>
+
+    <br /><br />
+
+
+    <!--拖动-->
+
+    <div id="drop" style="width: 350px;height: 70px;padding: 10px;border: 1px solid #aaaaaa" ondrop="drop(event)"
+        ondragover="allowDrop(event)"></div>
+    <br />
+    <img id="drag" src="俺妹.jpg" alt="高坂桐乃" draggable="true" ondragstart="drag(event)" width="330px" height="90px">
+
+    <br /><br />
+
+
+    <!--地理定位-->
+    <p id="location">定位服务</p>
+    <button type="button" onclick="getLocation()">定位服务</button>
+
+
+    <br /><br />
+
+
+    <!--Audio-->
+    <audio controls>
+        <source src="张学友 - 蓝雨.wav" type="audio/wav">
+        你的浏览器不支持audio元素
+    </audio>
+
+    <br /><br />
+
+
+    <!--input:color-->
+    <input type="color" name="color_extractor">
+    <br />
+    <input type="submit">
+
+    <br /><br />
+
+
+    <!--Web存储-->
+    <button type="button" onclick="clickCount()">点击！</button>
+    <div id="result"></div>
+
+    <br />
+
+
+
+    <!--Web Workers-->  <!--未完成-->
+    <p>计数：<output id="Web_Workers"></output></div></p>
+    <button type="button" onclick="StartWork()">开始计数</button>
+    <button type="button" onclick="StopWork()">结束计数</button>
+
+    <br /><br />
+
+
+    <!---->
+
+
+
+    <!---->
+
+
+
+    <!---->
+
+
+
+
+    <!---->
+
+
+
+
+    <!---->
+
+
+
+
+    <!---->
+
+
+
+
+    <!---->
+
+
+
+
+    <!---->
+
+
+
+
+
+
+</body>
+
+
+
+<script type="text/javascript" src="HTML5_JS.js"></script>
+<noscript>你的浏览器不支持Javascript</noscript>
+
+</html>
